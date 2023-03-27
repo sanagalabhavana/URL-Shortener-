@@ -1,0 +1,9 @@
+import pyshorteners 
+
+def short_url(url):
+    shortener = pyshorteners.Shortener()
+    a = shortener. tinyurl.short(url)
+    return a
+
+url_data = "https://www.google.com/search?q=google+url+shortener+link&rlz=1C1YTUH_enIN1032IN1032&oq=google+url+shortener+link&aqs=chrome..69i57j0i22i30l4j0i390l4j69i64.15028j0j15&sourceid=chrome&ie=UTF-8"
+print(short_url(url_data))
